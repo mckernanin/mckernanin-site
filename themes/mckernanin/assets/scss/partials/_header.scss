@@ -34,9 +34,11 @@
 }
 
 #primary-menu {
+	a {
+		color: $green-blue;
+	}
 	.current-menu-item a,
 	.sfHover a {
-		color: $green-blue;
 		border-color: $green-blue;
 	}
 
