@@ -1,0 +1,22 @@
+/*!
+Theme Name: McKernan.in
+Author: Kevin McKernan
+Description: Custom child theme of Cluster
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: cluster
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import "../cluster/style.css";
+@import "partials/mixins";
+@import "partials/grid";
+@import "partials/variables";
+@import "partials/global";
+@import "partials/typography";
+@import "partials/header";
+@import "partials/home";
+@import "partials/footer";

@@ -1,0 +1,38 @@
+.header #logo a {
+	font-size: 70px;
+	color: $green-blue;
+	display: inline-block;
+	@include bp(custom, 0, 1200px) {
+		font-size: 60px;
+	}
+	@include bp(custom, 0, 1050px) {
+		font-size: 50px;
+	}
+	@include bp(custom, 0, 740px) {
+		font-size: 40px;
+	}
+
+	@include bp(custom, 0, 620px) {
+		max-width: 350px;
+	}
+}
+
+#primary-menu {
+	.current-menu-item a,
+	.sfHover a {
+		color: $green-blue;
+		border-color: $green-blue;
+	}
+
+	> li > a {
+		padding-top: 20px;
+	}
+}
+
+.custom-background {
+	background: url("/wp-content/uploads/2016/02/headshot-2-16.jpg") top right no-repeat;
+	background-size: cover;
+	@include bp(custom, 0, 780px) {
+		background-image: url("/wp-content/uploads/2016/02/kevin-headshot-mobile.jpg");
+	}
+}

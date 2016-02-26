@@ -1,0 +1,22 @@
+body:not(.wp-admin),
+.mce-content-body {
+	font-family: $facit;
+	font-size: 16px;
+}
+
+h1,
+h1 a,
+h2,
+h2 a,
+h3,
+h3 a,
+h4,
+h4 a,
+h5,
+h5 a,
+h6,
+h6 a {
+	color: $green-blue;
+	font-family: $adelle;
+	font-weight: bold;
+}

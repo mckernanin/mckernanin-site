@@ -1,0 +1,49 @@
+.home {
+	.custom-background {
+		@include bp(custom, 0, 1400px) {
+			min-height: 600px;
+		}
+
+		@include bp(custom, 0, 1230px) {
+			min-height: 400px;
+		}
+
+		@include bp(custom, 0, 860px) {
+			min-height: 300px;
+		}
+
+		@include bp(custom, 0, 620px) {
+			min-height: 250px;
+		}
+	}
+
+	.custom-background-content {
+		padding-top: 120px;
+		@include bp(custom, 0, 1050px) {
+			padding-top: 100px;
+		}
+
+		@include bp(custom, 0, 620px) {
+			padding-top: 130px;
+		}
+
+		h3 {
+			@include bp(custom, 0, 1050px) {
+				font-size: 34px;
+			}
+			@include bp(custom, 0, 740px) {
+				font-size: 24px;
+			}
+		}
+	}
+
+	.container {
+		@include bp(custom, 0, 1400px) {
+			margin-top: -100px;
+		}
+
+		@include bp(custom, 0, 1230px) {
+			margin-top: 0;
+		}
+	}
+}

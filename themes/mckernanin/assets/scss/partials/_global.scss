@@ -1,0 +1,48 @@
+body {
+	background-color: $green-blue;
+}
+
+.section-block::before,
+.stag-custom-widget-area .widget::before {
+	background: $green-blue;
+}
+
+a,
+.stag-twitter a,
+.accent-color,
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6,
+.footer .twitter-feeds li a {
+	color: $green-blue;
+}
+
+.accent-background,
+.more-link,
+.button,
+.page-numbers,
+.nav-links > div,
+input[type=submit],
+button,
+.button {
+	background-color: $green-blue;
+}
+
+.single-portfolio .custom-background.universal {
+	background-color: transparent !important;
+}
+
+.page-template-template-portfolio-php .custom-background.universal {
+	background-color: transparent !important;
+}
+
+.single-portfolio .custom-background.universal .backstretch {
+	opacity: 0.5;
+}
+
+.page-template-template-portfolio-php .custom-background.universal .backstretch {
+	opacity: 0.5;
+}
