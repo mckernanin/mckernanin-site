@@ -44,6 +44,8 @@ class stag_widget_portfolio extends WP_Widget{
       query_posts(array(
         'post_type' => 'portfolio',
         'posts_per_page' => $post_count,
+		'meta_key' => 'featured',
+		'meta_value' => '1',
       ));
 
       if(have_posts()): while(have_posts()): the_post();
