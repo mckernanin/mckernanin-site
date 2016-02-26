@@ -29,6 +29,7 @@ add_action( 'admin_head', 'theme_typekit_inline' );
 
 function mckernanin_assets() {
 	wp_deregister_style( 'stag-custom-style' );
+	wp_enqueue_script( 'mckernanin-js', get_stylesheet_directory_uri() . '/assets/js/custom.min.js' );
 }
 add_action( 'wp_print_styles', 'mckernanin_assets', 100 );
 

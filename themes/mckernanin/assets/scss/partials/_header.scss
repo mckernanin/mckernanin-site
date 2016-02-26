@@ -1,19 +1,33 @@
-.header #logo a {
-	font-size: 70px;
-	color: $green-blue;
-	display: inline-block;
-	@include bp(custom, 0, 1200px) {
-		font-size: 60px;
-	}
-	@include bp(custom, 0, 1050px) {
-		font-size: 50px;
-	}
-	@include bp(custom, 0, 740px) {
-		font-size: 40px;
-	}
+.header {
 
-	@include bp(custom, 0, 620px) {
-		max-width: 350px;
+	#logo {
+		@include bp(custom, 0, 620px) {
+			margin-top: 20px;
+			width: 85%;
+			display: inline-block;
+		}
+
+		a {
+			font-size: 70px;
+			color: $green-blue;
+			display: inline-block;
+			@include bp(custom, 0, 1200px) {
+				font-size: 60px;
+			}
+			@include bp(custom, 0, 1050px) {
+				font-size: 50px;
+			}
+			@include bp(custom, 0, 740px) {
+				font-size: 40px;
+			}
+
+			@include bp(custom, 0, 620px) {
+				font-size: 35px;
+			}
+		}
+	}
+	.header-inner {
+		padding: 0 15px;
 	}
 }
 
