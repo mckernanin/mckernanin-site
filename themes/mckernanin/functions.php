@@ -1,4 +1,9 @@
 <?php
+
+// Includes
+require_once 'inc/helper-functions.php';
+require_once 'inc/edd-checkout-fields.php';
+
 function cc_mime_types( $mimes ) {
 	$mimes['svg'] = 'image/svg+xml';
 
