@@ -110,8 +110,8 @@ gulp.task('styles', function () {
 				.pipe(sass({
 					errLogToConsole: true,
 
-					// outputStyle: 'compressed',
-					outputStyle: 'compact',
+					outputStyle: 'compressed',
+					// outputStyle: 'compact',
 					// outputStyle: 'nested',
 					// outputStyle: 'expanded',
 					precision: 10
