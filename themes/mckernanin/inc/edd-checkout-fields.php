@@ -22,10 +22,10 @@ function mck_edd_display_checkout_fields() {
 ?>
 	<p id="edd-site-url-wrap">
 		<label class="edd-label" for="edd-site-url">
-			<?php echo 'website address'; ?>
+			<?php echo 'Website Address'; ?>
 		</label>
 		<span class="edd-description">
-			<?php echo 'Enter your website address.'; ?>
+			<?php echo 'Enter the website address this hosting plan is for.'; ?>
 		</span>
 		<input class="edd-input" type="text" name="edd_site_url" id="edd-site-url" placeholder="<?php echo 'website address'; ?>" />
 	</p>
