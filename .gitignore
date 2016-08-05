@@ -1,3 +1,7 @@
 uploads/
 plugins/
 db.php
+cache/
+mu-plugins/
+debug.log
+wp-cache-config.php
