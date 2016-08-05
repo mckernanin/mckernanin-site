@@ -1,3 +1,3 @@
 jQuery(document).ready(function($) {
-	$('#logo a').fitText();
+	$('.home #logo a').fitText();
 });

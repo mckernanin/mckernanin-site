@@ -8,9 +8,14 @@
 		}
 
 		a {
-			font-size: 70px;
-			color: $green-blue;
+			font-size: 40px;
+			color: white;
 			display: inline-block;
+
+			.home & {
+				color: $green-blue;
+			}
+
 			@include bp(custom, 0, 1200px) {
 				font-size: 60px;
 			}
@@ -34,24 +39,25 @@
 }
 
 #primary-menu {
+
 	a {
-		color: $green-blue;
+		color: white;
+
+		.home & {
+			color: $green-blue;
+		}
 	}
 	.current-menu-item a,
 	.sfHover a {
-		border-color: $green-blue;
+		border-color: white;
+
+		.home & {
+			border-color: $green-blue;
+		}
 	}
 
 	> li > a {
 		padding-top: 20px;
-	}
-}
-
-.custom-background {
-	background: url("/wp-content/uploads/2016/02/headshot-2-16.jpg") top right no-repeat;
-	background-size: cover;
-	@include bp(custom, 0, 780px) {
-		background-image: url("/wp-content/uploads/2016/02/kevin-headshot-mobile.jpg");
 	}
 }
 
@@ -61,4 +67,27 @@
 
 #mobile-nav {
 	color: $green-blue;
+}
+
+.custom-background-content {
+
+	h2,
+	h3 {
+		color: white;
+
+		.home & {
+			color: $green-blue;
+		}
+	}
+}
+
+body:not(.home) {
+
+	.container {
+		margin-top: 0;
+	}
+
+	.custom-background-wrapper {
+		max-height: 150px;
+	}
 }
