@@ -62,10 +62,10 @@ get_header(); ?>
 
 			<div <?php post_class( $class ); ?>>
 				<div class="overlay">
-					<h3 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php printf( __( 'Permanent Link to %s', 'stag' ), get_the_title() ); ?>"> <?php the_title(); ?></a></h3>
+					<h3 class="entry-title"><a href="<?php echo get_post_meta( $post->ID, '_stag_portfolio_url', true ); ?>" rel="bookmark" title="<?php printf( __( 'Permanent Link to %s', 'stag' ), get_the_title() ); ?>"> <?php the_title(); ?></a></h3>
 					<div class="portfolio-navigation">
-						<a href="<?php the_permalink(); ?>" class="accent-background portfolio-trigger" data-id="<?php the_ID(); ?>"><i class="icon-eye"></i></a>
-						<a href="<?php the_permalink(); ?>" class="accent-background" rel="bookmark" title="<?php printf( __( 'Permanent Link to %s', 'stag' ), get_the_title() ); ?>"><i class="icon-post-link"></i></a>
+						<a href="<?php echo get_post_meta( $post->ID, '_stag_portfolio_url', true ); ?>" class="accent-background portfolio-trigger" data-id="<?php the_ID(); ?>"><i class="icon-eye"></i></a>
+						<a href="<?php echo get_post_meta( $post->ID, '_stag_portfolio_url', true ); ?>" class="accent-background" rel="bookmark" title="<?php printf( __( 'Permanent Link to %s', 'stag' ), get_the_title() ); ?>"><i class="icon-post-link"></i></a>
 					</div>
 				</div>
 				<?php the_post_thumbnail( 'portfolio-thumbnail' ); ?>
