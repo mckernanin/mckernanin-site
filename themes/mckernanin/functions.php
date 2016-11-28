@@ -80,7 +80,7 @@ class McKernanin_Theme {
 	}
 
 	public function content_types() {
-		include_once( 'inc/class-fields.php' );
+		include_once( 'inc/class-cpt.php' );
 		$instagram_photos = new CPT( 'instagram_photo' );
 	}
 }
