@@ -1,6 +1,6 @@
 <?php
 
-class mckernanin_theme {
+class McKernanin_Theme {
 
 	function __construct() {
 
@@ -13,6 +13,7 @@ class mckernanin_theme {
 		add_action( 'wp_print_styles', 		array( $this, 'scripts_styles' ), 100 );
 
 		$this->roots_support();
+		$this->content_types();
 	}
 
 	/**
@@ -75,8 +76,13 @@ class mckernanin_theme {
 	}
 
 	public function editor_styles() {
-		add_editor_style( get_stylesheet_directory_uri() .'/editor-styles.css' );
+		add_editor_style( get_stylesheet_directory_uri() . '/editor-styles.css' );
+	}
+
+	public function content_types() {
+		include_once( 'inc/class-fields.php' );
+		$instagram_photos = new CPT( 'instagram_photo' );
 	}
 }
 
-new mckernanin_theme();
+new McKernanin_Theme();
