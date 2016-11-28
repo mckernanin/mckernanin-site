@@ -82,6 +82,7 @@ class McKernanin_Theme {
 	public function content_types() {
 		include_once( 'inc/class-cpt.php' );
 		$instagram_photos = new CPT( 'instagram_photo' );
+		$instagram_photos->register_taxonomy( 'hashtag' );
 	}
 }
 
